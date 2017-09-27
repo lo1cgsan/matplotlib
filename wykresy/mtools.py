@@ -4,14 +4,17 @@
 import csv
 
 
-def wykres(ax, x, y, **kwargs):
+def czytaj_csv(plik, separator=';'):
     """
-    Funkcja rysuje i zwraca obiekt wykresu
-    @params: ax - obiekt Axes, x, y – listy wartości x i y
-    **kwargs – opcjonalny słownik z nazwanymi parametrami wykresu
+    Zwraca wiersze z pliku csv w postaci listy list (rekordów)
+    @params: plik - nazwa pliku, separator – znak używany jako delimiter
     """
-    out = ax.plot(x, y, **kwargs)
-    return out
+    dane = []
+    with open(plik, newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator)
+        for lista in tresc:
+            dane.append(lista)
+    return dane
 
 
 def zapisz_csv(plik, dane, tryb="w"):
@@ -26,23 +29,10 @@ def zapisz_csv(plik, dane, tryb="w"):
             tresc.writerow(lista)
 
 
-def czytaj_csv(plik, separator=';'):
-    """
-    Zwraca wiersze z pliku csv w postaci listy list (rekordów)
-    @params: plik - nazwa pliku, separator – znak używany jako delimiter
-    """
-    dane = []
-    with open(plik, newline='') as plikcsv:
-        tresc = csv.reader(plikcsv, delimiter=separator)
-        for lista in tresc:
-            dane.append(lista)
-    return dane
-
-
 def wyczysc_dane(dane, pole):
     """
     Przygotowanie wartości finansowych do zapisania w bazie
-    @param: dane – lista rekordów, pole – numer pola do oczyszczenia
+    @params: dane – lista rekordów, pole – numer pola do oczyszczenia
     """
     for i, rekord in enumerate(dane):
         el = rekord[pole]
@@ -51,3 +41,13 @@ def wyczysc_dane(dane, pole):
         el = el.replace(',', '.')  # zamien przecinki na kropki
         dane[i][pole] = el
     return dane
+
+
+def wykres(ax, x, y, **kwargs):
+    """
+    Funkcja rysuje i zwraca obiekt wykresu
+    @params: ax - obiekt Axes, x, y – listy wartości x i y
+    **kwargs – opcjonalny słownik z nazwanymi parametrami wykresu
+    """
+    out = ax.plot(x, y, **kwargs)
+    return out

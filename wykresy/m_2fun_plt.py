@@ -5,9 +5,10 @@
 # f(x) = x/-3 + a dla x <= 0
 # f(x) = x*x/3 dla x >= 0
 
-import pylab
+from matplotlib import pyplot as plt
+import numpy as np
 
-lx = pylab.arange(-10, 10.5, 0.5)  # lista argumentów x
+lx = np.arange(-10, 10.5, 0.5)  # lista argumentów x
 a = int(input("Podaj współczynnik a: "))
 
 lx1 = [x for x in lx if x <= 0]
@@ -17,7 +18,7 @@ lx2 = [x for x in lx if x >= 0]
 ly2 = [x**2 / 3 for x in lx2]
 
 # pylab.plot(lx[:len(ly1)], ly1, lx[-len(ly2):], ly2)
-pylab.plot(lx1, ly1, lx2, ly2)
-pylab.title('Wykres f(x)')
-pylab.grid(True)
-pylab.show()
+plt.plot(lx1, ly1, lx2, ly2)
+plt.title('Wykres f(x)')
+plt.grid(True)
+plt.show()

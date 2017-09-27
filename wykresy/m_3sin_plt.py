@@ -22,7 +22,7 @@ t1 = np.arange(-360., 365., 5.)
 t1_radiany = [x * np.pi / 180 for x in t1]
 
 # plt.subplot(311)
-plt.plot(t1, f1(t1_radiany), 'r-')
+plt.plot(t1, f1(t1_radiany), c='red', ls='-', lw=1, marker='.')
 
 # plt.subplot(312)
 plt.plot(t1, f2(t1_radiany), 'g-')
