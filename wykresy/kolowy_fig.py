@@ -15,6 +15,9 @@ def wybory():
     fig, ax = plt.subplots()
     fig.set_size_inches(9, 7)
     fig.canvas.set_window_title("Wykres kołowy")
+
+    # patches – lista części graficznych wykresu (wycinków koła)
+    # t1, t2 – listy etykiet tekstowych i numerycznych wykresu
     patches, t1, t2 = ax.pie(frakcje, explode=explode, labels=etykiety,
                              colors=kolory, autopct='%.2f%%', shadow=True,
                              startangle=180)

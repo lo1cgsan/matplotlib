@@ -1,8 +1,8 @@
 Matplotlib – wybrane metody
 =============================
 
-pyplot
-------
+## pyplot
+
 
 ```python
 import matplotlib.pyplot as plt
@@ -16,8 +16,7 @@ import matplotlib.pyplot as plt
 - `plt.tight_layout()` – automatyczne dostosowanie prametrów wykresu
 - `plt.xticks(ile, etykiety)` – ustawia położenie i etykiety na osi x
 
-axes
-----
+## axes
 
 ```python
 fig, ax = plt.subplots()
@@ -37,3 +36,10 @@ fig, ax = plt.subplots()
 opcje = dict(c='green', ls='dotted', lw=2, marker='x')
 ax.plot(lx, ly, **opcje**)
 ```
+
+### Opcje (wybór)
+
+- `linestyle` (`ls`) – 'solid' ('-'), 'dashed' ('--'), 'dashdot' ('-.'), 'dotted' (':')
+- `linewidth` (`lw`) – wartość float w punktach
+- `marker` – '.' (punkt), ',' (piksel), 'o' (kółko), '^', 'v', '<', '>' – trójkąty, 's' – kwadrat, '\*' – gwiazdka
+- `autoptc` – ciąg formatujący (`fmt%pct`) lub funkcja używana do etykietowania części wykresu (ang. *wedges*) (kolumna, wycinek koła)
