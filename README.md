@@ -13,5 +13,6 @@ Zobacz:
 
 ## Od czego zacząć naukę Pythona?
 
+- [Instalacja Pythona w Windows](http://python101.readthedocs.io/pl/latest/env/windows.html)
 - [Świat Reeborga](http://robotyka.cyfrowaszkola.waw.pl)
 - [Podstawy Pythona](http://python101.readthedocs.io/pl/latest/podstawy/index.html)
