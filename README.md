@@ -8,4 +8,10 @@ Zobacz:
 - [Pyplot API](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
 
 [Materiał startowy](https://drive.google.com/open?id=0B24yoSHtTDq2YzJwcVdJdE1PVG8)
+
 [Opis funkcji i opcji](doc/matplotlib.md) użytych w wykresach.
+
+## Od czego zacząć naukę Pythona?
+
+- [Świat Reeborga](http://robotyka.cyfrowaszkola.waw.pl)
+- [Podstawy Pythona](http://python101.readthedocs.io/pl/latest/podstawy/index.html)
