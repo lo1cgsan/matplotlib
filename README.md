@@ -3,9 +3,9 @@
 Przykłady wykresów przy użyciu blbioteki [Matplotlib](https://matplotlib.org).
 
 Zobacz:
-- [Style kodowania](http://matplotlib.org/faq/usage_faq.html#coding-styles)
-- [Pyplot tutorial](http://matplotlib.org/users/pyplot_tutorial.html)
-- [Pyplot API](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
+- [Style kodowania](https://matplotlib.org/stable/tutorials/introductory/usage.html#the-object-oriented-interface-and-the-pyplot-interface)
+- [Pyplot tutorial](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
+- [Pyplot API](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot)
 
 [Materiał startowy](https://drive.google.com/open?id=0B24yoSHtTDq2YzJwcVdJdE1PVG8)
 
@@ -14,5 +14,5 @@ Zobacz:
 ## Od czego zacząć naukę Pythona?
 
 - [Instalacja Pythona w Windows](http://python101.readthedocs.io/pl/latest/env/windows.html)
-- [Świat Reeborga](http://robotyka.cyfrowaszkola.waw.pl)
 - [Podstawy Pythona](http://python101.readthedocs.io/pl/latest/podstawy/index.html)
+- [Świat Reeborga](http://robotyka.cyfrowaszkola.waw.pl)
