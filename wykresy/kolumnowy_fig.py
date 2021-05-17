@@ -15,7 +15,7 @@ def klasy():
     dane = czytaj_csv("../dane/dane_klasa1A.csv")
     dane.pop(0)  # usunięcie etykiet
     klasy = [row[0] for row in dane]
-    srednie = [row[1].replace(',', '.') for row in dane]
+    srednie = [float(row[1].replace(',', '.')) for row in dane]
 
     ile = np.arange(len(klasy))
     szerokosc = 0.5
