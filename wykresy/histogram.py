@@ -9,7 +9,7 @@ from mtools import *
 def main(args):
     dane = czytaj_csv('../dane/pisemne.csv')
     seria = [int(row[1]) for row in dane]
-    n, bins, patches = plt.hist(seria, 15, normed=1, facecolor='green')
+    n, bins, patches = plt.hist(seria, 15, facecolor='green')
 
     # y = mlab.normpdf(bins, 15, 66)
     # l = plt.plot(bins, y, 'r--', linewidth=1)
